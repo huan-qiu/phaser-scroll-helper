@@ -4,7 +4,7 @@
 
 # Inspiration
 
-ariya's [kinetic](https://github.com/ariya/kinetic/) and [littlee](https://github.com/littlee)'s scroll-related component
+Many thanks to ariya's [kinetic](https://github.com/ariya/kinetic/) tutorial and [littlee](https://github.com/littlee)'s scroll-related component
 
 
 
@@ -16,7 +16,16 @@ ariya's [kinetic](https://github.com/ariya/kinetic/) and [littlee](https://githu
 
   ​
 
+# Demo
+
+Scroll the whole canvas horizontally: [here](https://codepen.io/huan555/full/BVmZbQ/)
+
+Scroll part of canvas vertically: [here](https://codepen.io/huan555/pen/LrOjNP)
+
+
+
 # How to Used
+
 1. download the 'src/phaserScrollCanvas.js' file to your project
 
 2. import the file to get the default-exported function
