@@ -1,4 +1,4 @@
-## A helper function to imitate scrolling on Phaser's canvas
+## A helper function to imitate kinetic scrolling on Phaser's canvas
 
 
 
