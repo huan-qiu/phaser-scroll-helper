@@ -18,9 +18,9 @@ Many thanks to ariya's [kinetic](https://github.com/ariya/kinetic/) tutorial and
 
 # Demo
 
-Scroll the whole canvas horizontally: [here](https://codepen.io/huan555/full/BVmZbQ/)
+Scroll the whole canvas horizontally:  [here](https://codepen.io/huan555/full/BVmZbQ/)
 
-Scroll part of canvas vertically: [here](https://codepen.io/huan555/pen/LrOjNP)
+Scroll part of canvas vertically:  [here](https://codepen.io/huan555/full/LrOjNP/)
 
 
 
