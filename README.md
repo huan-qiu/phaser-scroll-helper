@@ -12,7 +12,7 @@ ariya's [kinetic](https://github.com/ariya/kinetic/) and [littlee](https://githu
 
 - Written in ES6
 
-- Support **either** vertical kinetic scrolling **or** horizontal kinetic scrolling( Note: Not both direction at the same time)
+- Support **either** vertical kinetic scrolling **or** horizontal kinetic scrolling( Note: Not both directions at the same time)
 
   ​
 
@@ -33,7 +33,7 @@ ariya's [kinetic](https://github.com/ariya/kinetic/) and [littlee](https://githu
        // scroll default to vertical direction, uncomment the next line if you want to scroll horizontally  
        // direction: 'horizontal', 
        game: window.game, // or your game reference
-       newWorldBoundsInfoArr: [0, 0, 640, 2160], // [x, y, width, height] an array that reset the World bounds. In this case, it specifies the scrollable bounds. Usually the width and height are determined by the widest and highest object you want to display.
+       newWorldBounds: [0, 0, 640, 2160], // Array, [x, y, width, height], to resets the World bounds. In this case, it specifies the scrollable bounds. Usually the width and height are determined by the widest and highest object you want to display.
      })
 
      ```
@@ -48,11 +48,11 @@ ariya's [kinetic](https://github.com/ariya/kinetic/) and [littlee](https://githu
        // scroll default to vertical direction, uncomment the next line if you want to scroll horizontally  
        // direction: 'horizontal', 
        game: window.game, // or your game reference
-       scrollAllBoo: false, // set to false to specify your don't want the whole canvas to scroll. Default to true.
-       newWorldBoundsInfoArr: [0, 0, 640, 2160], // [x, y, width, height] an array that reset the World bounds. Make sure this new world bounds cover your target scrolling area.
-       fixedToCameraObjsArr: [gameObjectReference [,gameObjectReference [,...]]], // an array whose items are the game objects that your want to stay put while scrolling. Default value is null, however, since you just want to enable scrolling on a specific part but the whole canvas, you should specify in the array which game object to stay still.
-       scrollObj: ObjThatCanBeScrolled, // value of scrollObj is the game object that you intent to perform the scroll
-       maskRectInfoArr: [180, 460, 380, 360] // [x, y, width, height] an array that specifies the view area of your scrollObj
+       scrollAll: false, // Boolean, set to false to specify your don't want the whole canvas to scroll. Default to true.
+       newWorldBounds: [0, 0, 640, 2160], // Array, [x, y, width, height], to reset the World bounds. Make sure this new world bounds cover your target scrolling area.
+       fixedToCameraObjs: [gameObjectReference [,gameObjectReference [,...]]], // an array whose items are the game objects that your want them to stay put while scrolling. Default value is null.
+       scrollObj: ObjThatCanBeScrolled, // value of scrollObj is the game object's reference that you intent to perform the scroll
+       maskRect: [180, 460, 380, 360] // Array, [x, y, width, height], to specify the view area of your scrollObj
      })
      ```
 

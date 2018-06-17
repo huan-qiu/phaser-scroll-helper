@@ -1,16 +1,16 @@
-export default ({game, scrollAllBoo = true, newWorldBoundsInfoArr, direction = 'vertical', fixedToCameraObjsArr = null, maskRectInfoArr = [], scrollObj = null}) => {
+export default ({game, scrollAll = true, newWorldBounds, direction = 'vertical', fixedToCameraObjs = null, maskRect = [], scrollObj = null}) => {
   let pressed, lastY, lastTrackY, vUsed, amplitude, timestamp, ticker, delta
 
   // set a specific area to be scrolled
-  game.world.setBounds(...newWorldBoundsInfoArr)
+  game.world.setBounds(...newWorldBounds)
 
   // to scroll the whole world OR just a specific part inside the world
-  if (!scrollAllBoo && fixedToCameraObjsArr) {
-    for (let item of fixedToCameraObjsArr) {
+  if (!scrollAll && fixedToCameraObjs) {
+    for (let item of fixedToCameraObjs) {
       item.fixedToCamera = true
     }
     scrollObj.mask = game.add.graphics()
-    scrollObj.mask.drawRect(...maskRectInfoArr)
+    scrollObj.mask.drawRect(...maskRect)
     scrollObj.mask.fixedToCamera = true
 
     scrollObj.inputEnabled = true
