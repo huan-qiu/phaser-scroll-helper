@@ -39,7 +39,7 @@ Scroll part of canvas vertically:  [here](https://codepen.io/huan555/full/LrOjNP
 
      // put the following in the State that you would like to do the scroll
      getScrolling({
-       // scroll default to vertical direction, uncomment the next line if you want to scroll horizontally  
+       // scroll defaults to vertical direction, uncomment the next line if you want to scroll horizontally  
        // direction: 'horizontal', 
        game: window.game, // or your game reference
        newWorldBounds: [0, 0, 640, 2160], // Array, [x, y, width, height], to resets the World bounds. In this case, it specifies the scrollable bounds. Usually the width and height are determined by the widest and highest object you want to display.
@@ -54,7 +54,7 @@ Scroll part of canvas vertically:  [here](https://codepen.io/huan555/full/LrOjNP
 
      // put the following in the State that you would like to do the scroll
      getScrolling({
-       // scroll default to vertical direction, uncomment the next line if you want to scroll horizontally  
+       // scroll defaults to vertical direction, uncomment the next line if you want to scroll horizontally  
        // direction: 'horizontal', 
        game: window.game, // or your game reference
        scrollAll: false, // Boolean, set to false to specify your don't want the whole canvas to scroll. Default to true.
