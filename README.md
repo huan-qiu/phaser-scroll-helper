@@ -24,7 +24,7 @@ Scroll part of canvas vertically:  [here](https://codepen.io/huan555/full/LrOjNP
 
 
 
-# How to Used
+# How to Use
 
 1. download the 'src/phaserScrollCanvas.js' file to your project
 
